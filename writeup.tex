@@ -56,19 +56,85 @@ We propose a method to find the dimensions of objects in an environment using a 
 
 Humans have used rulers for over four Millennia. But while measurements have gotten more accurate, they haven’t become much more convenient. In this paper, we describe a way in which almost everyone can have access to a quick and accurate ruler at any point in time. The idea is to use two items most people carry - a credit or debit card, and a camera phone. The user places their card next to the object they want to measure, and takes a picture of it. The user then selects which region of the image that they want to measure, and they get an answer. The phone does this by finding the accurate location of the card in the image, and calculating the distance by using the known size of a credit card.
 
+
+
+
 \begin{figure}[t]
 \begin{center}
-   \includegraphics[width=0.8\linewidth]{one}
+   \includegraphics[width=0.8\linewidth]{measure1}
+   \includegraphics[width=0.8\linewidth]{measure2}
+   \includegraphics[width=0.8\linewidth]{measure3}
+   \includegraphics[width=0.8\linewidth]{measure4}
 \end{center}
-   \caption{something}
-\label{fig:first}
+   \caption{Measurements found in different environments}
+\label{fig:measurements}
 \end{figure}
 
+
+\begin{figure*}
+\begin{center}
+	   \includegraphics[width=0.8\linewidth]{general-workflow}
+\end{center}
+   \caption{general workflow TODO desc}
+\label{fig:general-workflow}
+\end{figure*}
+
+\begin{figure}[t]
+\begin{center}
+	   \includegraphics[width=0.8\linewidth]{leastsquares}
+\end{center}
+   \caption{Least Squares approach to finding the card.}
+\label{fig:leastsquares}
+\end{figure}
+
+\begin{figure}[t]
+\begin{center}
+	   \includegraphics[width=0.8\linewidth]{approach2}
+\end{center}
+   \caption{Approach 2.. TODO desc}
+\label{fig:approach2}
+\end{figure}
+
+\begin{figure}[t]
+\begin{center}
+	   \includegraphics[width=0.8\linewidth]{graph1}
+\end{center}
+   \caption{graph 1.. TODO desc}
+\label{fig:graph1}
+\end{figure}
+
+
+
+\begin{figure}[t]
+\begin{center}
+	   \includegraphics[width=0.8\linewidth]{graph2}
+\end{center}
+   \caption{graph 2.. TODO desc}
+\label{fig:graph2}
+\end{figure}
+
+
+\begin{figure}[t]
+\begin{center}
+	   \includegraphics[width=0.8\linewidth]{sketchtokensmap}
+\end{center}
+   \caption{One of the sketch tokens maps that we found. The card is at the bottom left of the cereal box, but it's hard to distinguish because the test data for the sketch tokens favors less straight edges}
+\label{fig:sketchtokensmap}
+\end{figure}
+
+
+\begin{figure}[t]
+\begin{center}
+	   \includegraphics[width=0.8\linewidth]{measureapp}
+\end{center}
+   \caption{The PhotoRuler App. The user specifies where the card is, and what they want to measure.}
+\label{fig:measureapp}
+\end{figure}
 
 %-------------------------------------------------------------------------
 \subsection{Related Work}
 
-On the surface, some fig \ref{fig:first} it seems that there’s been an immense amount of research that’s been done on the same subject that we are trying to tackle - object recognition. Papers have been published recognizing not just one object, but many \cite{ObjectDetection}. And face recognition is highly accurate \cite{FaceDetection}. But our requirements are slightly different - we need a near perfect bounding box. The vast majority of research that is done on object recognition only needs a somewhat accurate box, because their main concern is reducing false categorizations in the large array of situations they are trying to study. We, instead, have a very standard set of images to search through, but require a highly accurate bounding box such that we can give good measurements.
+On the surface, it seems that there’s been an immense amount of research that’s been done on the same subject that we are trying to tackle - object recognition. Papers have been published recognizing not just one object, but many \cite{ObjectDetection}. And face recognition is highly accurate \cite{FaceDetection}. But our requirements are slightly different - we need a near perfect bounding box. The vast majority of research that is done on object recognition only needs a somewhat accurate box, because their main concern is reducing false categorizations in the large array of situations they are trying to study. We, instead, have a very standard set of images to search through, but require a highly accurate bounding box such that we can give good measurements.
 
 As for measuring objects using a phone, the popular applications require the user to manually specify where reference objects are. The Android application called PhotoRuler \cite{PhotoRuler} requires the user to take a picture, and then draw arrows around the reference object (like a credit card) and around the object to be measured (todo fig. PhotoRuler). There is a similar iPhone application \cite{RulerPhone}, but it requires the user to move the camera around to overlay a reference card that is displayed along with the video feed. A different approach is just a ruler displayed on a phone \cite{SmartRuler}. But this rough approach at solving the more general problem just pushes towards the need for a better portable ruler.
 
@@ -147,6 +213,15 @@ Several aspects of the performance were measured, including the algorithm’s de
 
 	In order to evaluate the measurement precision of the algorithm, pictures of a credit card alongside a measuring tape were taken from a range of distances to the card. The program calculated the lengths of the measuring tape, and those measurements were compared to the actual lengths. (TODO: include one of the pictures).
 \subsection{Results}
+
+\begin{figure*}
+\begin{center}
+	   \includegraphics[width=0.8\linewidth]{general-workflow}
+\end{center}
+   \caption{general workflow TODO desc}
+\label{fig:general-workflow}
+\end{figure*}
+
 	The ability of the algorithm to successfully find the credit card in the scene relates to the size of the card in the scene. When the card is far away, it has a smaller size relative to the image as a whole, and the algorithm has a harder time detecting the card in general. As the card becomes larger, the algorithm is more able to detect the card and is less susceptible to factors like blur and lighting conditions. In fact, our experiments show that there is a sort of 
 “sweet spot” for the algorithm, when the card takes up 30\% - 40\% of the image. This corresponds to the card being about 30 cm away from the camera. (TODO: include plot).
 
@@ -162,12 +237,14 @@ Machine learning is another great option that we have yet to explore. The classi
 
 In the far future, we imagine that this same method could be taken to characterize a 3D scene. Specifically, it’s been shown that a 3D scene can be created through a sequence of pictures at different flash strengths. With a reference card in the image, it would be possible to get a fully measured 3D scene. Our imaginations might just fly away into thinking that a user could take a 3D picture of a piece of furniture, and then visualize what it might look like if they bring it back to their house. But maybe we’re getting ahead of ourselves!
 
+
+
+
 Take this out \cite{Authors13}
 
 
 
-
-
+\clearpage
 {\small
 \bibliographystyle{ieee}
 \bibliography{egbib}
