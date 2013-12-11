@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: writeup.aux
+The style file: ieee.bst
+Database file #1: egbib.bib
+Warning--I didn't find a database entry for "Authors13"
+Warning--to sort, need author or key in RulerPhone
+Warning--to sort, need author or key in SmartRuler
+Warning--to sort, need author or key in CardStick
+You've used 3 entries,
+            2120 wiz_defined-function locations,
+            509 strings with 3977 characters,
+and the built_in function-call counts, 456 in all, are:
+= -- 33
+> -- 3
+< -- 0
++ -- 3
+- -- 0
+* -- 18
+:= -- 48
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 21
+empty$ -- 70
+format.name$ -- 0
+if$ -- 109
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 0
+newline$ -- 12
+num.names$ -- 0
+pop$ -- 36
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 21
+stack$ -- 0
+substring$ -- 15
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 3
+while$ -- 0
+width$ -- 4
+write$ -- 17
+(There were 4 warnings)
