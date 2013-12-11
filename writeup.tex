@@ -55,12 +55,20 @@ We propose a method to find the dimensions of objects in an environment using a 
 \section{Introduction}
 
 Humans have used rulers for over four Millennia. But while measurements have gotten more accurate, they haven’t become much more convenient. In this paper, we describe a way in which almost everyone can have access to a quick and accurate ruler at any point in time. The idea is to use two items most people carry - a credit or debit card, and a camera phone. The user places their card next to the object they want to measure, and takes a picture of it. The user then selects which region of the image that they want to measure, and they get an answer. The phone does this by finding the accurate location of the card in the image, and calculating the distance by using the known size of a credit card.
-\includegraphics[scale=.01]{one}
+
+\begin{figure}[t]
+\begin{center}
+   \includegraphics[width=0.8\linewidth]{one}
+\end{center}
+   \caption{something}
+\label{fig:first}
+\end{figure}
+
 
 %-------------------------------------------------------------------------
 \subsection{Related Work}
 
-On the surface, it seems that there’s been an immense amount of research that’s been done on the same subject that we are trying to tackle - object recognition. Papers have been published recognizing not just one object, but many \cite{ObjectDetection}. And face recognition is highly accurate \cite{FaceDetection}. But our requirements are slightly different - we need a near perfect bounding box. The vast majority of research that is done on object recognition only needs a somewhat accurate box, because their main concern is reducing false categorizations in the large array of situations they are trying to study. We, instead, have a very standard set of images to search through, but require a highly accurate bounding box such that we can give good measurements.
+On the surface, some fig \ref{fig:first} it seems that there’s been an immense amount of research that’s been done on the same subject that we are trying to tackle - object recognition. Papers have been published recognizing not just one object, but many \cite{ObjectDetection}. And face recognition is highly accurate \cite{FaceDetection}. But our requirements are slightly different - we need a near perfect bounding box. The vast majority of research that is done on object recognition only needs a somewhat accurate box, because their main concern is reducing false categorizations in the large array of situations they are trying to study. We, instead, have a very standard set of images to search through, but require a highly accurate bounding box such that we can give good measurements.
 
 As for measuring objects using a phone, the popular applications require the user to manually specify where reference objects are. The Android application called PhotoRuler \cite{PhotoRuler} requires the user to take a picture, and then draw arrows around the reference object (like a credit card) and around the object to be measured (todo fig. PhotoRuler). There is a similar iPhone application \cite{RulerPhone}, but it requires the user to move the camera around to overlay a reference card that is displayed along with the video feed. A different approach is just a ruler displayed on a phone \cite{SmartRuler}. But this rough approach at solving the more general problem just pushes towards the need for a better portable ruler.
 
