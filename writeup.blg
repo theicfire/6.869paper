@@ -3,48 +3,45 @@ The top-level auxiliary file: writeup.aux
 The style file: ieee.bst
 Database file #1: egbib.bib
 Warning--I didn't find a database entry for "Authors13"
-Warning--to sort, need author or key in RulerPhone
-Warning--to sort, need author or key in SmartRuler
-Warning--to sort, need author or key in CardStick
-You've used 3 entries,
+You've used 0 entries,
             2120 wiz_defined-function locations,
-            509 strings with 3977 characters,
-and the built_in function-call counts, 456 in all, are:
-= -- 33
-> -- 3
+            500 strings with 3738 characters,
+and the built_in function-call counts, 19 in all, are:
+= -- 0
+> -- 0
 < -- 0
-+ -- 3
++ -- 0
 - -- 0
-* -- 18
-:= -- 48
-add.period$ -- 3
-call.type$ -- 3
-change.case$ -- 6
+* -- 3
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 21
-empty$ -- 70
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
 format.name$ -- 0
-if$ -- 109
+if$ -- 1
 int.to.chr$ -- 0
-int.to.str$ -- 3
+int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 12
+newline$ -- 3
 num.names$ -- 0
-pop$ -- 36
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 0
 quote$ -- 0
-skip$ -- 21
+skip$ -- 1
 stack$ -- 0
-substring$ -- 15
-swap$ -- 3
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 3
+type$ -- 0
+warning$ -- 0
 while$ -- 0
-width$ -- 4
-write$ -- 17
-(There were 4 warnings)
+width$ -- 0
+write$ -- 2
+(There was 1 warning)

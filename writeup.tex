@@ -25,7 +25,7 @@
 \begin{document}
 
 %%%%%%%%% TITLE
-\title{\LaTeX\ Author Guidelines for CVPR Proceedings}
+\title{Measurements with Cell Phones and Credit Cards}
 
 \author{Chase Lambert\\
 MIT\\
@@ -46,16 +46,30 @@ Cambridge, MA\\
 \maketitle
 %\thispagestyle{empty}
 
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+We propose a method to find the dimensions of objects in an environment using a cell phone and a credit card. The credit card is automatically found in the image, mainly using convolutions and the distance transform, and the user is then given the chance to measure objects. Our approach works well under reasonable lighting conditions when the phone is about 30 cm away from the object, but degrades in quality as the card gets smaller in the image.
+\end{abstract}
+
+%%%%%%%%% BODY TEXT
+\section{Introduction}
+
+Humans have used rulers for over four Millennia. But while measurements have gotten more accurate, they haven’t become much more convenient. In this paper, we describe a way in which almost everyone can have access to a quick and accurate ruler at any point in time. The idea is to use two items most people carry - a credit or debit card, and a camera phone. The user places their card next to the object they want to measure, and takes a picture of it. The user then selects which region of the image that they want to measure, and they get an answer. The phone does this by finding the accurate location of the card in the image, and calculating the distance by using the known size of a credit card.
 
 %-------------------------------------------------------------------------
 \subsection{Related Work}
 
+On the surface, it seems that there’s been an immense amount of research that’s been done on the same subject that we are trying to tackle - object recognition. Papers have been published recognizing not just one object, but many (todo reference). And face recognition is highly accurate - (todo insert percentage.. reference). But our requirements are slightly different - we need a near perfect bounding box. The vast majority of research that is done on object recognition only needs a somewhat accurate box (⅔ is a standard.. todo reference from Torbolla?.. talk to TAs?), because their main concern is reducing false categorizations in the large array of situations they are trying to study. We, instead, have a very standard set of images to search through, but require a highly accurate bounding box such that we can give good measurements.
+
+As for measuring objects using a phone, the popular applications require the user to manually specify where reference objects are. The Android application called PhotoRuler requires the user to take a picture, and then draw arrows around the reference object (like a credit card) and around the object to be measured (fig. PhotoRuler). There is a similar iPhone application [RulerPhone reference], but it requires the user to move the camera around to overlay a reference card that is displayed along with the video feed. A different approach is just a ruler displayed on a phone [Smart Ruler reference]. But this rough approach at solving the more general problem just pushes towards the need for a better portable ruler.
+
+Other approaches to finding measurements are physical devices. While normal sized rulers are too large to carry around, CardStick is a “durable vinyl ruler decal that fits any credit, debit, or other card.” [CardStick reference]. This may work well for objects that are smaller than a credit card, but no larger. And even with this limitation, users are impressed - the product has nearly five stars on Amazon.
 
 %------------------------------------------------------------------------
 \section{Methods and Approaches}
 Our program allows the user to measure objects in an image through two steps. First, the program identifies the credit card in the image, which gives objects in the image a sense of scale. Second, the user denotes the object he or she wants to measure. 
 
-There are four different, but related, approaches we use in solving the problem of credit card detection. The first approach uses edge detection and Chamfer matching to find a credit card in a plain background, and then pinpoints the card in a more complex scene using matched image features. The second approach simply relies on Chamfer matching to find a credit card in any image. (TODO: include Chamfer citation). The third approach finds the region in the scene image which best matches the distance transform of a template card. The fourth utilizes Sketch Tokens to help find edges and complete Chamfer matching. (TODO: include ST citation). 
+There are four different, but related, approaches we use in solving the problem of credit card detection. The first approach uses edge detection and Chamfer matching to find a credit card in a plain background, and then pinpoints the card in a more complex scene using matched image features. The second approach simply relies on Chamfer matching to find a credit card in any image. (TODO: include Chamfer citation). The third approach finds the region in the scene image which best matches the distance transform of a template card. The fourth utilizes SketchTokens to help find edges and complete Chamfer matching. (TODO: include ST citation). 
 
 Once the credit card is identified in the scene, the user is able to drag a line across the image, and the program outputs the length of that line. As per our assumptions, the object the user is trying to measure is approximately the same distance from the camera as the credit card. Almost all credit cards have standardized dimensions for the card (54 mm X 86 mm) and the magnetic strip (9.5 mm X 86 mm, 5.5 mm from the top of the card). (TODO: cite the dimensions). The credit card detection supplies a conversion from pixel length to centimeters since we know the dimensions of the card in the image and in the physical world, and that conversion is used to convert the pixel length of the user’s line to a physical distance in centimeters. 
 
@@ -138,8 +152,8 @@ Machine learning is another great option that we have yet to explore. The classi
 
 In the far future, we imagine that this same method could be taken to characterize a 3D scene. Specifically, it’s been shown that a 3D scene can be created through a sequence of pictures at different flash strengths. With a reference card in the image, it would be possible to get a fully measured 3D scene. Our imaginations might just fly away into thinking that a user could take a 3D picture of a piece of furniture, and then visualize what it might look like if they bring it back to their house. But maybe we’re getting ahead of ourselves!
 
+Take this out ~\cite{Authors13}
 
-submission~\cite{Authors13}  remove this
 
 
 
