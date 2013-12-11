@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.18)  10 DEC 2013 22:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.18)  10 DEC 2013 23:12
 entering extended mode
  %&-line parsing enabled.
 **writeup.tex
@@ -348,23 +348,20 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ö in font ptmr7t!
-Missing character: There is no î in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
  [4321{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
  [4322]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -430,36 +427,63 @@ Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [4324]
+ [4324] (./writeup.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+[]\OT1/ptm/m/n/9 Magtek credit card stan-dards.  []$\OT1/pcr/m/n/9 https : / / 
+play .
+ []
 
-LaTeX Warning: Citation `Authors13' on page 4325 undefined on input line 155.
 
-(./writeup.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+\OT1/pcr/m/n/9 google . com / store / apps / details ? id = kr .
+ []
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
+Underfull \hbox (badness 10000) in paragraph at lines 15--20
+[]\OT1/ptm/m/n/9 Photoruler.  []$\OT1/pcr/m/n/9 https : / / play . google . com
+ /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--20
+\OT1/pcr/m/n/9 store / apps / details ? id = com . grymala .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
+[]\OT1/ptm/m/n/9 Rulerphone.  []$\OT1/pcr/m/n/9 https : / / itunes . apple . co
+m /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
+\OT1/pcr/m/n/9 us / app / rulerphone-[]photo-[]measuring /
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
 ) [4325
 
-] (./writeup.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] (./writeup.aux) ) 
 Here is how much of TeX's memory you used:
- 5343 strings out of 495061
- 74570 string characters out of 1182621
- 152978 words of memory out of 3000000
- 8390 multiletter control sequences out of 15000+50000
- 22067 words of font info for 52 fonts, out of 3000000 for 9000
+ 5387 strings out of 495061
+ 75055 string characters out of 1182621
+ 153382 words of memory out of 3000000
+ 8413 multiletter control sequences out of 15000+50000
+ 27019 words of font info for 64 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,9n,25p,1167b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
-/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></
-usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on writeup.pdf (5 pages, 77642 bytes).
+ 38i,9n,25p,1167b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/
+share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texliv
+e/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
+mes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on writeup.pdf (5 pages, 93947 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

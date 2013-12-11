@@ -2,46 +2,51 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: writeup.aux
 The style file: ieee.bst
 Database file #1: egbib.bib
-Warning--I didn't find a database entry for "Authors13"
-You've used 0 entries,
+Warning--to sort, need author or key in PhotoRuler
+Warning--to sort, need author or key in RulerPhone
+Warning--to sort, need author or key in SmartRuler
+Warning--to sort, need author or key in CardStick
+Warning--there's a number but no volume in canny
+Warning--empty booktitle in SketchTokens
+You've used 13 entries,
             2120 wiz_defined-function locations,
-            500 strings with 3738 characters,
-and the built_in function-call counts, 19 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 3
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            575 strings with 5704 characters,
+and the built_in function-call counts, 4080 in all, are:
+= -- 420
+> -- 133
+< -- 5
++ -- 58
+- -- 42
+* -- 249
+:= -- 607
+add.period$ -- 42
+call.type$ -- 13
+change.case$ -- 60
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 19
+duplicate$ -- 163
+empty$ -- 375
+format.name$ -- 42
+if$ -- 907
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 13
+missing$ -- 8
+newline$ -- 68
+num.names$ -- 18
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 47
 quote$ -- 0
-skip$ -- 1
+skip$ -- 120
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 272
+swap$ -- 47
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 warning)
+type$ -- 52
+warning$ -- 6
+while$ -- 35
+width$ -- 15
+write$ -- 140
+(There were 6 warnings)

@@ -1,3 +1,79 @@
-\begin{thebibliography}{}\itemsep=-1pt
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{CardStick}
+Cardstick.
+\newblock \url{http://www.thecardstick.com/}.
+\newblock Accessed: 2013-11-14.
+
+\bibitem{SmartRuler}
+Magtek credit card standards.
+\newblock
+  \url{https://play.google.com/store/apps/details?id=kr.sira.ruler&hl=en}.
+\newblock Accessed: 2013-11-14.
+
+\bibitem{PhotoRuler}
+Photoruler.
+\newblock
+  \url{https://play.google.com/store/apps/details?id=com.grymala.photoruler&hl%
+=en}.
+\newblock Accessed: 2013-11-14.
+
+\bibitem{RulerPhone}
+Rulerphone.
+\newblock
+  \url{https://itunes.apple.com/us/app/rulerphone-photo-measuring/id288774794}.
+\newblock Accessed: 2013-11-14.
+
+\bibitem{Authors13}
+Authors.
+\newblock The frobnicatable foo filter, 2013.
+\newblock Face and Gesture submission ID 324. Supplied as additional material
+  {\tt fg324.pdf}.
+
+\bibitem{surf}
+H.~Bay, A.~Ess, T.~Tuytelaars, and L.~Van~Gool.
+\newblock Speeded-up robust features (surf).
+\newblock {\em Computer vision and image understanding}, 110(3):346--359, 2008.
+
+\bibitem{canny}
+J.~Canny.
+\newblock A computational approach to edge detection.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, (6):679--698, 1986.
+
+\bibitem{ObjectDetection}
+S.~K. Divvala, D.~Hoiem, J.~H. Hays, A.~A. Efros, and M.~Hebert.
+\newblock An empirical study of context in object detection.
+\newblock In {\em Computer Vision and Pattern Recognition, 2009. CVPR 2009.
+  IEEE Conference on}, pages 1271--1278. IEEE, 2009.
+
+\bibitem{ransac}
+M.~A. Fischler and R.~C. Bolles.
+\newblock Random sample consensus: a paradigm for model fitting with
+  applications to image analysis and automated cartography.
+\newblock {\em Communications of the ACM}, 24(6):381--395, 1981.
+
+\bibitem{chamfer}
+D.~M. Gavrila and V.~Philomin.
+\newblock Real-time object detection for “smart” vehicles.
+\newblock In {\em Computer Vision, 1999. The Proceedings of the Seventh IEEE
+  International Conference on}, volume~1, pages 87--93. IEEE, 1999.
+
+\bibitem{SketchTokens}
+J.~J. Lim, C.~L. Zitnick, and P.~Doll{\'a}r.
+\newblock Sketch tokens: A learned mid-level representation for contour and
+  object detection.
+\newblock CVPR, 2013.
+
+\bibitem{sift}
+D.~G. Lowe.
+\newblock Object recognition from local scale-invariant features.
+\newblock In {\em Computer vision, 1999. The proceedings of the seventh IEEE
+  international conference on}, volume~2, pages 1150--1157. Ieee, 1999.
+
+\bibitem{FaceDetection}
+P.~Viola and M.~J. Jones.
+\newblock Robust real-time face detection.
+\newblock {\em International journal of computer vision}, 57(2):137--154, 2004.
 
 \end{thebibliography}
