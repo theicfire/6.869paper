@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.18)  10 DEC 2013 20:44
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.18)  10 DEC 2013 23:15
 entering extended mode
  %&-line parsing enabled.
 **egpaper_final.tex
@@ -337,15 +337,51 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 48.
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-
-LaTeX Warning: Citation `Authors13' on page 4321 undefined on input line 71.
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
-(./egpaper_final.bbl) [4321{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+ [4321{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-] (./egpaper_final.aux)
+]
+
+LaTeX Warning: Citation `Authors13b' on page 4322 undefined on input line 206.
+
+[4322]
+
+LaTeX Warning: Citation `Alpher02' on page 4323 undefined on input line 278.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 279.
+
+
+LaTeX Warning: Citation `Alpher04' on page 4323 undefined on input line 279.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 281.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 282.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 287.
+
+
+LaTeX Warning: Citation `Alpher02' on page 4323 undefined on input line 287.
+
+
+LaTeX Warning: Citation `Alpher02' on page 4323 undefined on input line 288.
+
+
+LaTeX Warning: Citation `Alpher03' on page 4323 undefined on input line 288.
+
+
+LaTeX Warning: Reference `fig:onecol' on page 4323 undefined on input line 363.
+
+
+
+LaTeX Warning: Reference `fig:short' on page 4323 undefined on input line 363.
+
+[4323] (./egpaper_final.bbl) [4324] (./egpaper_final.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -354,20 +390,27 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5334 strings out of 495061
- 74475 string characters out of 1182621
- 144978 words of memory out of 3000000
- 8402 multiletter control sequences out of 15000+50000
- 26259 words of font info for 66 fonts, out of 3000000 for 9000
+ 5393 strings out of 495061
+ 75092 string characters out of 1182621
+ 153009 words of memory out of 3000000
+ 8429 multiletter control sequences out of 15000+50000
+ 34949 words of font info for 86 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,9n,27p,258b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,9n,24p,309b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
-/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></
-usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on egpaper_final.pdf (1 page, 53800 bytes).
+ve/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/u
+rw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pf
+b></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-
+texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on egpaper_final.pdf (4 pages, 154559 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
