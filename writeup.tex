@@ -6,6 +6,8 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
 
 % Include other packages here, before hyperref.
 
@@ -59,18 +61,6 @@ Humans have used rulers for over four millennia. But while measurements have got
 
 
 
-\begin{figure}[t]
-\begin{center}
-   \includegraphics[width=0.8\linewidth]{measure1}
-   \includegraphics[width=0.8\linewidth]{measure2}
-   \includegraphics[width=0.8\linewidth]{measure3}
-   \includegraphics[width=0.8\linewidth]{measure4}
-\end{center}
-   \caption{Measurements found in different environments}
-\label{fig:measurements}
-\end{figure}
-
-
 \begin{figure*}
 \begin{center}
 	   \includegraphics[width=0.8\linewidth]{general-workflow}
@@ -79,21 +69,22 @@ Humans have used rulers for over four millennia. But while measurements have got
 \label{fig:general-workflow}
 \end{figure*}
 
-\begin{figure}[t]
+\begin{figure*}[t]
 \begin{center}
-	   \includegraphics[width=0.8\linewidth]{leastsquares}
-\end{center}
-   \caption{Least Squares approach to finding the card.}
-\label{fig:leastsquares}
-\end{figure}
-
-\begin{figure}[t]
+\begin{subfigure}{.48\textwidth}
 \begin{center}
-	   \includegraphics[width=0.8\linewidth]{approach2}
+	   \includegraphics[width=0.9\linewidth]{approach2}
 \end{center}
-   \caption{Approach 2.. TODO desc}
-\label{fig:approach2}
-\end{figure}
+\end{subfigure}
+\begin{subfigure}{.48\textwidth}
+\begin{center}
+  	   \includegraphics[width=0.9\linewidth]{leastsquares}
+\end{center}
+\end{subfigure}
+\end{center}
+   \caption{The left image shows how chamfer matching alone causes the template to go towards edges of higher density, even when there's edges inside the matched area. The right shows the least squares approach, that is less affected by the noisy edges.}
+\label{fig:high-density-edges}
+\end{figure*}
 
 \begin{figure}[t]
 \begin{center}
@@ -189,7 +180,8 @@ The second approach only requires the user take the image of the scene. This alg
 	Somewhat surprisingly, the pure Chamfer matching approach works reliably and quickly in well-lit conditions. TODO: include some images here of it working. For relatively plain scenes, the algorithm can identify the credit card from the background. Most of the computation involves several image convolutions, and the resizing makes those convolutions less computationally intensive. For many cases, the credit card detection takes about 2 seconds for input scene images measuring 2000 by 3000 pixels. More discussion of the successes of this approach takes place in the Results section of this paper.
 \subsubsection{Weaknesses}
 
-	This approach fails in dimly lit scenes or complex scenes with many edges. For dimly lit scenes, the Canny edge detector fails to discriminate between the edges of the magnetic strip on the back of the credit card and the edges of the rest of the scene. It is difficult to find a threshold the Canny edge detector can use to only extract the very defined edges of the magnetic strip. Thus, the edge detector outputs a scene with many edges. Due to the nature of the distance transform and Chamfer distances, the Chamfer distance is often minimized in regions of the scene with a high density of edges, not the actual location of the card. Therefore, in scenes with many edges, this approach often fails to find the credit card.
+	This approach fails in dimly lit scenes or complex scenes with many edges. For dimly lit scenes, the Canny edge detector fails to discriminate between the edges of the magnetic strip on the back of the credit card and the edges of the rest of the scene. It is difficult to find a threshold the Canny edge detector can use to only extract the very defined edges of the magnetic strip. Thus, the edge detector outputs a scene with many edges. Due to the nature of the distance transform and
+    Chamfer distance, the Chamfer distance is often minimized in regions of the scene with a high density of edges as shown in fig. \ref{fig:high-density-edges}, not the actual location of the card. Therefore, in scenes with many edges, this approach often fails to find the credit card.
 	
 Also, size limitations can lower the performance of the credit card detection. Once again, if the credit card is too small, its edges can become buried in the “noise” of the other edges in the scene. More discussion of the size limitations of this approach takes place in the Results section.
 
